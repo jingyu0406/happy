@@ -1,0 +1,87 @@
+@keyframes changeColor {
+    0% { color: rgb(255, 0, 0); }
+    33% { color: blue; }
+    66% { color: green; }
+    100% { color: red; }
+}
+
+
+
+
+.run {
+    animation: changeColor 1s infinite;
+    font-size: 150px;
+    line-height: 50px; 
+ /* 調整寬度 */
+    width: 60%;
+    margin: 0 20%;
+}
+.text{
+    width: auto;
+
+}
+.day{
+
+}
+.happy{
+    width: 250px;
+    height: 140px;
+    background-color: aquamarine;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   
+    position:fixed;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    box-shadow: 5px 5px 2px #90cca8;
+
+
+}
+.happytext{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.happy:hover{
+    /* :hover 代表滑鼠移到元素上時的狀態 */
+    transform: translate(-50%, -50%) scale(1.05);
+
+}
+
+.happy:active{
+    /* :active是滑鼠點擊元素的狀態 */
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: inset 0 0 10px 1px rgb(49, 94, 111);
+}
+.happycat{
+    position:fixed;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: auto;
+    display: none;
+    border-radius: 50px;
+}
+.popcat{
+    width: 250px;
+    height: auto;
+    top:80%;
+    left: 50%;
+    position:fixed;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.popcata{
+    width: 350px;
+    height: auto;
+    position:fixed;
+    transform: translate(-50%,-50%);
+    display: none;
+    top:80%;
+    left: 50%;
+}
